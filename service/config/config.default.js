@@ -35,12 +35,23 @@ module.exports = appInfo => {
       // password
       password: 'root',
       // database
-      database: 'react_blog',   
+      database: 'react_blog',
     },
     // load into app, default is open
     app: true,
     // load into agent, default is close
     agent: false,
+  };
+
+  config.security = {
+    scrf: {
+      enable: false
+    },
+    domainWhiteList: ['*']
+  };
+  config.cors = {
+    origin: '*',
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS'
   };
 
   return {
