@@ -8,8 +8,10 @@ import '../static/style/pages/index.css'
 import Author from '../components/Author'
 import Footer from '../components/Footer'
 
+import  servicePath  from '../config/apiUrl'
+
 const Home = (list) => {
-  console.log(list.data)
+  // console.log(list.data)
   const [mylist, setMylist] = useState(list.data);
 
   return (
@@ -54,7 +56,7 @@ const Home = (list) => {
 
 Home.getInitialProps = async () => {
   const promise = new Promise((resolve) => {
-    axios('http://127.0.0.1:7001/default/getArticleList').then(
+    axios(servicePath.getArticleList).then(
       (res) => {
         resolve(res.data);
       }
