@@ -48,7 +48,7 @@ const Header = () => {
                         {
                             navArray.map((item) => {
                                 return (
-                                    <Menu.Item key={item.id}>
+                                    <Menu.Item key={item.orderName}>
                                         <Icon type={item.icon} />
                                         {item.typeName}
                                     </Menu.Item>
