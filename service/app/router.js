@@ -12,4 +12,7 @@ module.exports = app => {
   router.get('/default/getTypeInfo', controller.default.home.getTypeInfo);
   router.get('/default/getListById/:id', controller.default.home.getListById);
   router.get('/', controller.home.index);
+
+  router.get('/admin', controller.admin.main.index);
+  router.post('/admin/checkOpenId', controller.admin.main.checkLogin);
 };
