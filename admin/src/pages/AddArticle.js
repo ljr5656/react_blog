@@ -1,12 +1,15 @@
 /* eslint-disable */
-import React, { useState } from 'react'
+import React, { useState, useEffect} from 'react'
 import marked from 'marked'
 import '../static/css/AddArticle.css'
 import { Row, Col, Input, Select, Button, DatePicker } from 'antd'
+import axios from 'axios'
+import servicePath from '../config/apiUrl'
 const { Option } = Select;
 const { TextArea } = Input;
 
-function AddArticle() {
+
+function AddArticle(props) {
 
   const [articleId, setArticleId] = useState(0)  // 文章的ID，如果是0说明是新增加，如果不是0，说明是修改
   const [articleTitle, setArticleTitle] = useState('')   //文章标题
@@ -17,7 +20,11 @@ function AddArticle() {
   const [showDate, setShowDate] = useState()   //发布日期
   const [updateDate, setUpdateDate] = useState() //修改日志的日期
   const [typeInfo, setTypeInfo] = useState([]) // 文章类别信息
-  const [selectedType, setSelectType] = useState(1) //选择的文章类别
+  const [selectedType, setSelectType] = useState('请选择文章类型') //选择的文章类别
+  
+  useEffect(()=> {
+    getTypeInfo();
+  },[])
 
   const renderer = new marked.Renderer();
   marked.setOptions({
@@ -43,6 +50,23 @@ function AddArticle() {
     setIntroducehtml(html);
   }
 
+  const getTypeInfo = () => {
+    axios({
+      method: 'get',
+      url: servicePath.getTypeInfo,
+      withCredentials: true
+    }).then(
+      res=> {
+        if(res.data.data == '没有登录') {
+          localStorage.removeItem('openId');
+          props.history.push('/Login')
+        }else {
+          setTypeInfo(res.data.data);
+        }
+      }
+    )
+  }
+
   return (
     <div>
       <Row gutter={5}>
@@ -56,8 +80,12 @@ function AddArticle() {
             </Col>
             <Col span={4}>
               &nbsp;
-              <Select defaultValue="1" size="large">
-                <Option value="1">HTML、CSS</Option>
+              <Select defaultValue={selectedType} size="large">
+                {
+                  typeInfo.map((item, index)=> {
+                  return (<Option key={index} value={item.id}>{item.typeName}</Option>)
+                  })
+                }
               </Select>
             </Col>
           </Row>
