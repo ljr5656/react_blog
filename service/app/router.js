@@ -18,5 +18,8 @@ module.exports = app => {
 
   router.get('/admin', controller.admin.main.index);
   router.post('/admin/checkOpenId', controller.admin.main.checkLogin);
+  router.post('/admin/addArticle', adminauth, controller.admin.main.addArticle);
   router.get('/admin/getTypeInfo', adminauth, controller.admin.main.getTypeInfo);
+  router.get('/admin/getArticleList', adminauth, controller.admin.main.getArticleList);
+  router.get('/admin/delArticle/:id', adminauth, controller.admin.main.delArticle);
 };
