@@ -29,8 +29,8 @@ function ArticleList(props) {
       title: '确定要删除这篇文章吗？',
       content: '如果你点击OK键，文章将永远被删除，无法被恢复。',
       onOk() {
-        axios(servicePath.delArticle + id, {withCredentials: true}).then(
-          res=> {
+        axios(servicePath.delArticle + id, { withCredentials: true }).then(
+          res => {
             message.success('文章删除成功');
             getList();
           }
@@ -40,6 +40,13 @@ function ArticleList(props) {
         message.success('取消删除文章');
       }
     })
+  }
+
+  //修改文章
+  const updateArticle = (id, checked) => {
+
+    props.history.push('/index/add/' + id)
+
   }
 
   return (
@@ -82,8 +89,8 @@ function ArticleList(props) {
                 {item.view_count}
               </Col>
               <Col span={4}>
-                <Button type="primary">修改</Button>
-                <Button onClick={()=> {delArticle(item.id)}}>删除</Button>
+                <Button type="primary" onClick={() => { updateArticle(item.id) }}>修改</Button>
+                <Button onClick={() => { delArticle(item.id) }}>删除</Button>
               </Col>
             </Row>
           </List.Item>
