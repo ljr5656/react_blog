@@ -1,0 +1,54 @@
+{
+  "devFiles": [],
+  "pages": {
+    "/": [
+      "static/runtime/webpack-9369c5c69dbf6d4912cb.js",
+      "static/css/commons.9ce6449e.chunk.css",
+      "static/chunks/commons.241d03983b740ffaabb1.js",
+      "static/css/styles.b0d30816.chunk.css",
+      "static/chunks/styles.9b892d13eaf96cccafe0.js",
+      "static/runtime/main-737d90edd733560acaeb.js"
+    ],
+    "/_app": [
+      "static/runtime/webpack-9369c5c69dbf6d4912cb.js",
+      "static/css/commons.9ce6449e.chunk.css",
+      "static/chunks/commons.241d03983b740ffaabb1.js",
+      "static/css/styles.b0d30816.chunk.css",
+      "static/chunks/styles.9b892d13eaf96cccafe0.js",
+      "static/runtime/main-737d90edd733560acaeb.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack-9369c5c69dbf6d4912cb.js",
+      "static/css/commons.9ce6449e.chunk.css",
+      "static/chunks/commons.241d03983b740ffaabb1.js",
+      "static/runtime/main-737d90edd733560acaeb.js"
+    ],
+    "/_polyfills": [
+      "static/runtime/polyfills-6f63874b7f93cc8cfe44.js"
+    ],
+    "/detailed": [
+      "static/runtime/webpack-9369c5c69dbf6d4912cb.js",
+      "static/css/commons.9ce6449e.chunk.css",
+      "static/chunks/commons.241d03983b740ffaabb1.js",
+      "static/css/styles.b0d30816.chunk.css",
+      "static/chunks/styles.9b892d13eaf96cccafe0.js",
+      "static/runtime/main-737d90edd733560acaeb.js"
+    ],
+    "/index": [
+      "static/runtime/webpack-9369c5c69dbf6d4912cb.js",
+      "static/css/commons.9ce6449e.chunk.css",
+      "static/chunks/commons.241d03983b740ffaabb1.js",
+      "static/css/styles.b0d30816.chunk.css",
+      "static/chunks/styles.9b892d13eaf96cccafe0.js",
+      "static/runtime/main-737d90edd733560acaeb.js"
+    ],
+    "/list": [
+      "static/runtime/webpack-9369c5c69dbf6d4912cb.js",
+      "static/css/commons.9ce6449e.chunk.css",
+      "static/chunks/commons.241d03983b740ffaabb1.js",
+      "static/css/styles.b0d30816.chunk.css",
+      "static/chunks/styles.9b892d13eaf96cccafe0.js",
+      "static/runtime/main-737d90edd733560acaeb.js"
+    ]
+  }
+}
