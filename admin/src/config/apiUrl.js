@@ -1,4 +1,4 @@
-let ipUrl = '192.144.231.96:7001/admin/';
+let ipUrl = 'http://192.144.231.96:7001/admin/';
 
 let servicePath = {
     checkLogin: ipUrl + 'checkOpenId',  //检查用户名和密码
