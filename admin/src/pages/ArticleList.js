@@ -16,7 +16,7 @@ function ArticleList(props) {
     axios({
       method: 'get',
       url: servicePath.getArticleList,
-      withCredentials: true
+      withCredentials: false
     }).then(
       (res) => {
         setList(res.data.list)
@@ -29,7 +29,7 @@ function ArticleList(props) {
       title: '确定要删除这篇文章吗？',
       content: '如果你点击OK键，文章将永远被删除，无法被恢复。',
       onOk() {
-        axios(servicePath.delArticle + id, { withCredentials: true }).then(
+        axios(servicePath.delArticle + id, { withCredentials: false }).then(
           res => {
             message.success('文章删除成功');
             getList();
