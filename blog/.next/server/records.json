@@ -21,29 +21,23 @@
     "byName": {
       "init-server.js": 0,
       "on-error-server.js": 1,
-      "static\\ODk_4xL3OMe4SwZ6ayGaQ\\pages\\_app.js": 2,
-      "static\\ODk_4xL3OMe4SwZ6ayGaQ\\pages\\_document.js": 3,
-      "static\\ODk_4xL3OMe4SwZ6ayGaQ\\pages\\_error.js": 4,
-      "static\\ODk_4xL3OMe4SwZ6ayGaQ\\pages\\detailed.js": 5,
-      "static\\ODk_4xL3OMe4SwZ6ayGaQ\\pages\\index.js": 6,
-      "static\\ODk_4xL3OMe4SwZ6ayGaQ\\pages\\list.js": 7,
-      "static\\8dQRvXY3ioavyw-EXiM9N\\pages\\_app.js": 8,
-      "static\\8dQRvXY3ioavyw-EXiM9N\\pages\\_document.js": 9,
-      "static\\8dQRvXY3ioavyw-EXiM9N\\pages\\_error.js": 10,
-      "static\\8dQRvXY3ioavyw-EXiM9N\\pages\\detailed.js": 11,
-      "static\\8dQRvXY3ioavyw-EXiM9N\\pages\\index.js": 12,
-      "static\\8dQRvXY3ioavyw-EXiM9N\\pages\\list.js": 13
+      "static\\kp9jIZJMpuwRubgaNpu1c\\pages\\_app.js": 2,
+      "static\\kp9jIZJMpuwRubgaNpu1c\\pages\\_document.js": 3,
+      "static\\kp9jIZJMpuwRubgaNpu1c\\pages\\_error.js": 4,
+      "static\\kp9jIZJMpuwRubgaNpu1c\\pages\\detailed.js": 5,
+      "static\\kp9jIZJMpuwRubgaNpu1c\\pages\\index.js": 6,
+      "static\\kp9jIZJMpuwRubgaNpu1c\\pages\\list.js": 7
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
-      10,
-      11,
-      12,
-      13,
-      8,
-      9
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
     ]
   }
 }

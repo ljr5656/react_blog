@@ -7,7 +7,7 @@ function Main() {
   return (
     <Router>
       <Route path="/login/" exaxt component={Login} />
-      <Route path="/index/" exaxt component={AdminIndex} />
+      <Route path="/index" exaxt component={AdminIndex} />
     </Router>
   )
 }

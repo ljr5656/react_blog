@@ -60,7 +60,7 @@ function AddArticle(props) {
     axios({
       method: 'get',
       url: servicePath.getTypeInfo,
-      withCredentials: false
+      withCredentials: true
     }).then(
       res => {
         if (res.data.data == '没有登录') {
@@ -111,7 +111,7 @@ function AddArticle(props) {
         method: 'post',
         url: servicePath.addArticle,
         data: dataProps,
-        withCredentials: false
+        withCredentials: true
       }).then(
         res => {
           setArticleId(res.data.insertId)
@@ -128,7 +128,7 @@ function AddArticle(props) {
 
   const getArticleById = (id) => {
     axios(servicePath.getArticleById + id, {
-      withCredentials: false,
+      withCredentials: true,
       // header: { 'Access-Control-Allow-Origin': '*' }
     }).then(
       res => {

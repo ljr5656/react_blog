@@ -1,5 +1,5 @@
 {
-  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!static/style/pages/comm.css": [
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!static/style/pages/detailed.css": [
     {
       "modules": {
         "byIdentifier": {},
@@ -16,7 +16,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!static/style/pages/detailed.css": [
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!static/style/pages/comm.css": [
     {
       "modules": {
         "byIdentifier": {},
@@ -84,7 +84,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!static/style/components/footer.css": [
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!static/style/components/author.css": [
     {
       "modules": {
         "byIdentifier": {},
@@ -101,7 +101,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!static/style/components/author.css": [
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!static/style/components/footer.css": [
     {
       "modules": {
         "byIdentifier": {},
@@ -164,29 +164,24 @@
       "styles": 2,
       "static/runtime/main.js": 3,
       "static/runtime/polyfills.js": 4,
-      "static\\ODk_4xL3OMe4SwZ6ayGaQ\\pages\\_app.js": 5,
-      "static\\ODk_4xL3OMe4SwZ6ayGaQ\\pages\\_error.js": 6,
-      "static\\ODk_4xL3OMe4SwZ6ayGaQ\\pages\\detailed.js": 7,
-      "static\\ODk_4xL3OMe4SwZ6ayGaQ\\pages\\index.js": 8,
-      "static\\ODk_4xL3OMe4SwZ6ayGaQ\\pages\\list.js": 9,
-      "static\\8dQRvXY3ioavyw-EXiM9N\\pages\\_app.js": 10,
-      "static\\8dQRvXY3ioavyw-EXiM9N\\pages\\_error.js": 11,
-      "static\\8dQRvXY3ioavyw-EXiM9N\\pages\\detailed.js": 12,
-      "static\\8dQRvXY3ioavyw-EXiM9N\\pages\\index.js": 13,
-      "static\\8dQRvXY3ioavyw-EXiM9N\\pages\\list.js": 14
+      "static\\kp9jIZJMpuwRubgaNpu1c\\pages\\_app.js": 5,
+      "static\\kp9jIZJMpuwRubgaNpu1c\\pages\\_error.js": 6,
+      "static\\kp9jIZJMpuwRubgaNpu1c\\pages\\detailed.js": 7,
+      "static\\kp9jIZJMpuwRubgaNpu1c\\pages\\index.js": 8,
+      "static\\kp9jIZJMpuwRubgaNpu1c\\pages\\list.js": 9
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
-      10,
-      11,
-      12,
-      13,
-      14,
       2,
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
     ]
   }
 }
